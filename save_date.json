@@ -1,0 +1,15 @@
+{
+    "name": "Kiriya",
+    "job_class": "Warrior",
+    "level": 1,
+    "exp": 21,
+    "gold": 10,
+    "stats": {
+        "vit": 10,
+        "str": 10,
+        "agi": 10,
+        "dex": 10,
+        "int": 10,
+        "spr": 10
+    }
+}
