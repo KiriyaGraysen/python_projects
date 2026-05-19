@@ -3,29 +3,24 @@ def logic():
     question = ""
     
     while True:
-        print("\n[1] Add")
-        print("[2] Subtract")
-        print("[3] Multiply")
-        print("[4] Divide")
-        print("[5] Exit")
-        choice = int(input("Please choose an operator: "))
+        if question != 'y':
+            firstNum = int(input("\nEnter the first number: "))
+        
+        choice = input("Please choose an operator: ")
         
         if choice == 5:
             break
         
-        if question != 'y':
-            firstNum = int(input("\nEnter the first number: "))
-            
         secondNum = int(input("Enter the second number: "))
         
         match choice:
-            case 1:
+            case "+":
                 result = add(firstNum, secondNum)
-            case 2:
+            case "-":
                 result = subtract(firstNum, secondNum)
-            case 3:
+            case "*":
                 result = multiply(firstNum, secondNum)
-            case 4:
+            case "/":
                 result = divide(firstNum, secondNum)
             case _:
                 print("Invalid input.")

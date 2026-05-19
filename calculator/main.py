@@ -1,4 +1,5 @@
 import calculator
+import converter
 
 if __name__ != '__main__':
     exit
@@ -13,3 +14,6 @@ match choice:
     case 1:
         calc = calculator.logic()
         calc.logic()
+    case 2:
+        conv = converter.logic()
+        conv.logic()
