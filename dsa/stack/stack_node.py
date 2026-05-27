@@ -6,7 +6,7 @@ class Node:
 class Stack:
     def __init__(self):
         self.head = None
-        self.size = 0
+        self.length = 0
         
     def push(self, value):
         # Initialize a new node which will hold a value
@@ -18,17 +18,16 @@ class Stack:
         
         # update the value of head using the object of the new_node
         self.head = new_node
-        self.size += 1
+        self.length += 1
         
     def pop(self):
         # check first if the stack is empty
         if self.isEmpty():
             return "The stack is empty. Cannot pop a stack."
             
-        
         popped_node = self.head
         self.head = self.head.next
-        self.size -+ 1
+        self.length -= 1
         
         return popped_node
         
@@ -39,10 +38,10 @@ class Stack:
         return self.head.value
     
     def isEmpty(self):
-        return self.size == 0
+        return self.length == 0
     
     def size(self):
-        return self.size
+        return self.length
     
     def traverseAndPrint(self):
         current_node = self.head
@@ -54,7 +53,6 @@ class Stack:
         print()
         
 myStack = Stack()
-
 
 print(myStack.isEmpty())
 
